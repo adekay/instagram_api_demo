@@ -1,0 +1,101 @@
+.blue-highlight {
+    color: #00BAE5 !important;
+}
+
+#main-nav .navbar-brand svg {
+    height: 30px;
+    width: auto;
+}
+
+.top-banner {
+    background-image: url(../images/banner-image.jpg);
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.jumbotron {
+    margin: 0px;
+    padding: 0px;
+    background-color: transparent;
+}
+
+.top-banner .top-content {
+    height: 744px;
+}
+
+.top-banner .top-content .top {
+    color: #424242;
+    font-size: 67px;
+    font-weight: 300;
+    line-height: 1;
+    display: block;
+}
+
+.top-banner .top-content .middle {
+    color: #424242;
+    font-size: 83px;
+    font-weight: bold;
+    line-height: 1;
+    display: block;
+}
+
+.top-banner .top-content .bottom {
+    color: #424242;
+    font-size: 18px;
+    line-height: 20px;
+    display: block;
+    margin-top: 10px;
+}
+
+.top-banner .top-content a {
+    text-align: center;
+    width: 270px;
+    margin-top: 15px;
+    color: #fff;
+    background: #00BAE5;
+    text-shadow: 0 1px 3px rgba(36, 180, 126, .4);
+    white-space: nowrap;
+    height: 40px;
+    line-height: 39px;
+    padding: 0 14px;
+    -webkit-box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .025em;
+    text-decoration: none;
+    -webkit-transition: all .15s ease;
+    transition: all .15s ease;
+}
+
+.top-banner .top-content a:focus,
+.top-banner .top-content a:hover {
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1px);
+    -webkit-box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
+    box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
+}
+
+.videos-section .header {
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.videos-section .header h3 {
+    color: #424242;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+}
+
+.videos-section .header p {
+    color: #424242;
+    font-size: 16px;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 5px;
+}
