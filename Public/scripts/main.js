@@ -17,6 +17,6 @@
 
         }
     });
-    /* code for menu color change on scroll */
+    /* code for menu color change on scroll end */
 
 }());
