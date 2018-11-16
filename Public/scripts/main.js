@@ -67,9 +67,14 @@
     function addVideoToPage(data, count) {
         console.log(data);
         var videoContainer = $('.video-container').eq(count);
-        videoContainer.find('.vid video').attr('src', data.videos.standard_resolution.url).attr('poster', data.images.standard_resolution.url);
+        videoContainer.find('.vid video')
+            .attr('src', data.videos.standard_resolution.url)
+            .attr('poster', data.images.standard_resolution.url)
+            .prop('controls', true);
+        videoContainer.find('.details .User-name')
+            .text(data.user.full_name)
+            .attr('href', data.link);
         videoContainer.find('.details .profile-pic').attr('src', data.user.profile_picture);
-        videoContainer.find('.details .User-name').text(data.user.full_name).attr('href', data.link);
         videoContainer.find('.details .video-caption').text(data.caption.text);
         videoContainer.find('.details .comment-button').text('comment').attr('href', data.link);
     }
