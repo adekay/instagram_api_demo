@@ -74,9 +74,14 @@
         videoContainer.find('.details .User-name')
             .text(data.user.full_name)
             .attr('href', data.link);
-        videoContainer.find('.details .profile-pic').attr('src', data.user.profile_picture);
-        videoContainer.find('.details .video-caption').text(data.caption.text);
-        videoContainer.find('.details .comment-button').text('comment').attr('href', data.link);
+        videoContainer.find('.details .profile-pic')
+            .attr('src', data.user.profile_picture);
+        videoContainer.find('.details .video-caption')
+            .text(data.caption.text);
+        videoContainer.find('.actions .comment-button')
+            .text('comment')
+            .attr('href', data.link);
+        videoContainer.show();
     }
 
     /* ---------- code section for fetchind and displaying instagram videos END ---------- */
