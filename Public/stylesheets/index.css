@@ -82,6 +82,10 @@
     box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
 }
 
+.videos-section {
+    margin-bottom: 30px;
+}
+
 .videos-section .header {
     margin-top: 10px;
     margin-bottom: 70px;
@@ -190,4 +194,12 @@
     -webkit-box-shadow: 4px 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
     box-shadow: 4px 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
     margin-bottom: 20px;
+}
+
+.footer {
+    color: #fff;
+    background-color: #00BAE5;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
