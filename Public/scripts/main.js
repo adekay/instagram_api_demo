@@ -35,28 +35,24 @@
             .catch(handleError);
 
         function filterForVideos(res) {
-            console.log('start');
 
             $.each(res.data, function (index, data) {
-                console.log(count);
                 if (data.type === 'video') {
                     addVideoToPage(data, count);
                     count++;
                 }
                 // checks if the next batch of paginated data is needed to complete 10 videos, if so runs again with new next_url
                 if ((index + 1) === res.data.length && count < 10 && res.pagination.next_url) {
-                    console.log('entered');
                     displayInstagramVideos(res.pagination.next_url, count);
                 }
 
                 // ensures number of videos doesn't exceed 10
                 return count < 10;
             });
-            console.log(res);
         }
 
         function handleError(error) {
-            console.log(error.responseJSON.meta.error_message);
+            console.error(error.responseJSON.meta.error_message);
         }
     }
 
@@ -65,7 +61,6 @@
     }
 
     function addVideoToPage(data, count) {
-        console.log(data);
         var videoContainer = $('.video-container').eq(count);
         videoContainer.find('.vid video')
             .attr('src', data.videos.standard_resolution.url)
