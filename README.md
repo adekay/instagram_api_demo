@@ -12,10 +12,10 @@ To run this application, you require an [InstagramAPI](https://www.instagram.com
 Do not commit API access token to a repository.
 
 ## Setup
-1 Download file from This repository
-2 Open the public folder in the downloaded application folder
-3 Open the index.html file on a text editor
-4 Scroll down towards the very end of the index file and find the code that looks like this:
+1. Download file from This repository
+2. Open the public folder in the downloaded application folder
+3. Open the index.html file on a text editor
+4. Scroll down towards the very end of the index file and find the code that looks like this:
 
 ```javascript
 var  API_DETAILS = {
@@ -26,7 +26,7 @@ var  API_DETAILS = {
 	}
 };
 ```
-5 Replace the _ADD INSTAGRAM API ACCESS TOKEN HERE_ string with your InstagramAPI Access Token and save the file.
+5. Replace the _ADD INSTAGRAM API ACCESS TOKEN HERE_ string with your InstagramAPI Access Token and save the file.
 
 Now you are ready to run the application.
 
