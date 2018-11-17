@@ -22,7 +22,7 @@
 
     /* ---------- code section for fetching and displaying instagram videos ---------- */
 
-    // execute on page load
+    // executes on page load
     displayInstagramVideos(API_DETAILS.api, 0);
 
     // recursive function that gets the APi tag data, filters for videos, displays and 
@@ -38,6 +38,9 @@
 
             $.each(res.data, function (index, data) {
                 if (data.type === 'video') {
+                    //hides the unavailable panel once a video is found
+                    $('.videos-section .video-unavailable').hide();
+
                     addVideoToPage(data, count);
                     count++;
                 }
